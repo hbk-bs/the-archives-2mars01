@@ -1,3 +1,4 @@
+
 /* base style */
 
 body{
@@ -20,7 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p{
-	padding: 16px;
+	padding-bottom: 16px;
+padding-left:16px;
 }
 ul, ol{
 	
@@ -31,9 +33,14 @@ ul, ol{
   
 }
 
-
+nav{
+  padding-bottom:16px; 
+  text-weight: 900;
+    text-align: center; 
+  color: tomato;
+  word-spacing: 8em;}
   
-}
+
 a:link{
 	color: seagreen;
 	text-decoration: none
@@ -66,4 +73,9 @@ blockquote{
 }
 hr{
 color: seagreen;
+}
+
+footer{
+ text-align: center;
+   font-size: x-small;
 }
