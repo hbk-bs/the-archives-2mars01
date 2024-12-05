@@ -1,0 +1,81 @@
+/* base style */
+
+body{
+
+	color: mediumseagreen; 
+	background-color: palegreen;
+  margin: 0 auto;
+	padding: 24px; 
+	line-break: normal;
+	font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+font-weight: normal; 
+  max-width: 60ch
+}
+
+h1, h2, h3, h4, h5, h6 {
+	
+	color: darkslategray; 
+	padding: 16px;
+	text-decoration: overline underline; 	 
+}
+
+p{
+	padding-bottom: 16px;
+padding-left:16px;
+}
+ul, ol{
+	
+	margin: 16px; 
+		padding-right: 16px;
+	padding-left: 16px; 
+	text-decoration: underline;
+  
+}
+
+nav{
+  padding-bottom:16px; 
+  text-weight: 900;
+    text-align: center; 
+word-spacing: 8em;
+}
+  
+
+a:link{
+	color: seagreen;
+	text-decoration: none
+		
+}
+a:visited{
+	color: darkslategray; 
+}
+a:hover
+{ color: crimson;
+	text-decoration: underline;
+
+}
+img{
+  padding: 16px; 
+  max-width: 100%;
+	height: auto;
+}
+
+	table{ 
+color: darkslategray;
+		padding: 16px; 
+background-color: mediumseagreen;  }
+ 
+blockquote{
+  padding:16px; 
+	background-color: darkslategray; 
+	 
+  
+}
+hr{
+color: seagreen;
+}
+
+footer{
+color: seagreen;
+ text-align: center;
+   font-size: x-small;
+}
