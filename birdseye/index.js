@@ -38,12 +38,10 @@ function setup() {
 		fill("lawngreen");
 		ellipse(x(x1 - 0.002), y(y1 - 0.002), s(0.01));
 	}
-
+}
 function keyPressed() {
 	if (key === "s") {
 		const name = prompt("Enter name", `out-${Date.now()}.png`);
 		save(name);
 	}
-}
-
 }
