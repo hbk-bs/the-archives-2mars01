@@ -2,8 +2,8 @@
 
 body{
 
-	color: mediumseagreen; 
-	background-color: palegreen;
+	color: #3cb371; 
+	background-color: #98fb98;
   margin: 0 auto;
 	padding: 24px; 
 	line-break: normal;
@@ -14,7 +14,7 @@ font-weight: normal;
 
 h1, h2, h3, h4, h5, h6 {
 	
-	color: darkslategray; 
+	color: #2f4f4f; 
 	padding: 16px;
 	text-decoration: overline underline; 	 
 }
@@ -34,22 +34,21 @@ ul, ol{
 
 nav{
   padding-bottom:16px; 
-  text-weight: 900;
     text-align: center; 
 word-spacing: 8em;
 }
   
 
 a:link{
-	color: seagreen;
-	text-decoration: none
+	color: #2e8b57;
+	
 		
 }
 a:visited{
-	color: darkslategray; 
+	color: #2f4f4f; 
 }
 a:hover
-{ color: crimson;
+{ color: #dc143c;
 	text-decoration: underline;
 
 }
@@ -60,22 +59,22 @@ img{
 }
 
 	table{ 
-color: darkslategray;
+color: #2f4f4f;
 		padding: 16px; 
-background-color: mediumseagreen;  }
+background-color: #3cb371;  }
  
 blockquote{
   padding:16px; 
-	background-color: darkslategray; 
+	background-color: #2f4f4f; 
 	 
   
 }
 hr{
-color: seagreen;
+color: #2e8b57;
 }
 
 footer{
-color: seagreen;
+color: #2e8b57;
  text-align: center;
    font-size: x-small;
 }

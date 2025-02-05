@@ -15,11 +15,7 @@ body {
 	
 	line-height: 1.5;
 }
-	/* damit der text schöner aussieht */
 	
-	-webkit-font-smoothing: antialiased;
-}
-/* damit bilder etc. nicht nebeneinander sonder übereinander sind */
 
 img,
 picture,
