@@ -1,11 +1,49 @@
-.container1, .container2, .container3, .container4{
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	background-color: #7fffd4;
-	padding: 8px;
 
+/* reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
+/* keinen voreingestellten rand */
+* {
+	margin: 0;
+padding: 0;
+}
+body {
+	/* damit der text leserlicher ist  */
+	
+	line-height: 1.5;
+}
+	
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+/*  damit verschiedene schriftarten keine automatischen schrifgrößen etc. haben */
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/* damit der text nicht ausbricht */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+/* base style */
 
 body{
 
@@ -14,55 +52,77 @@ body{
   margin: 0 auto;
 	padding: 24px; 
 	line-break: normal;
-	font-family: Avenir, Montserrat, Corbel, 'URW Go≤thic', source-sans-pro, sans-serif;
+	font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 font-weight: normal; 
-  max-width: 60ch;
-		min-width:20ch;
+  max-width: 60ch
 }
-
-h1, h2, h3, h4, h5, h6 {
-	display: flex;
-	justify-content: center; 
+p{
+	display: flex; 
+	justify-content: center;
+	background-color:#172727;
+	color: #98fb98;
+	padding-bottom: 16px;
+padding:16px;
+text-align: center; 
+font-weight: 500;
+border-radius: 6px;
+overflow: hidden
+}
+h1,h2,h3,h4,h5,h6{
+	text-align: center; 
 	color: #2f4f4f; 
-	padding: 16px;
+	padding: 24px;
 	text-decoration: overline underline; 	 
 }
-
-p{
-	padding-bottom: 16px;
-padding-left:16px;
-
-}
-  
-a:link{
+.item{
 	display: flex;
-	justify-content: center; 
-	color: #2e8b57;
-	text-decoration: none
-		
+	flex-direction: column;
+	justify-content: center;
+	min-width: 20ch;}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0px; 
+		padding-right: 0px;
+	text-decoration: none;
+	background-color: #2f4f4f;
+	border-radius: 10px;
+  
 }
+.navbar a{
+	color: #98fb98; 
+	text-decoration: none; 
+	padding: 15px; 
+	display: block; 
+	text-align: center; 
+}
+.navbar a:hover{
+	background-color: #172727 ;
+	border-radius: 10px;
+
+}
+a:link{
+	background-color:#172727;
+	margin: 10px;
+	padding: 10px; 
+		display: flex;
+		justify-content: center; 
+		color: #98fb98;
+	border-radius: 6px;
+}
+	
 a:visited{
-	color: #2f4f4f; 
+	color:#dc143c ; 
 }
 a:hover
 { color: #dc143c;
 	text-decoration: underline;
 
 }
-img{
-  padding: 16px; 
-  max-width: 100%;
-	height: auto;
-}
 
 footer{
+	padding: 10px   ;
 color: #2e8b57;
  text-align: center;
-   font-size: x-small;
-}
-@media (max-width: 600px) {
-	body {
-		flex-direction: column;
-	}
-	
+   font-size: small;
 }
