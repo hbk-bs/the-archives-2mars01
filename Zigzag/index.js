@@ -6,18 +6,16 @@ let ySpeed= 1;
 
 
 function setup(){
-  const canvas= createCanvas(500,500);
+  const canvas= createCanvas(200,200);
   canvas.parent ("sketch");
- // xSpeed= random (-5, 5);
- //ySpeed= random(-5,5);
-
+ 
   y=height/2;
   x= width/2;
 
 }
 function draw(){
 background (0,20); 
-fill ("white");
+fill ("ffffff");
 stroke (x+50, y+50);
 circle(x,y, radius);
 x+= xSpeed;

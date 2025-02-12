@@ -19,6 +19,7 @@ html{
 	scroll-behavior: smooth;
 }	
 
+
 img,
 picture,
 video,
@@ -71,11 +72,11 @@ p{
 	background-color:#172727;
 	color: #98fb98;
 	padding-bottom: 16px;
-padding:16px;
-text-align: center; 
-font-weight: 500;
-border-radius: 6px;
-overflow: hidden
+	padding:16px;
+	text-align: center; 
+	font-weight: 500;
+	border-radius: 10px;
+	overflow: hidden
 }
 figcaption{
 	margin-bottom:6px; 
@@ -104,6 +105,7 @@ figcaption{
 border: 2px solid #98fb98;
 border-radius: 50%;
 color:#98fb98;
+background-color:#172727
 }
 .goback:hover{
 	color:#98fb98;
@@ -136,7 +138,7 @@ border-radius: 50%;
 	margin: 6px; 
 	padding: 6px;
 	text-decoration: none;
-	background-color: #2f4f4f;
+	background-color:#172727 ;
 	border-radius: 10px;
   
 }
@@ -148,22 +150,18 @@ border-radius: 50%;
 	text-align: center; 
 }
 .navbar a:hover{
-	background-color: #172727 ;
+	background-color:#3a4040 ;
 	border-radius: 10px;
 
 }
-
-
-
 a{
-	background-color:#172727;
 	text-decoration: none;
 	text-align: center;
 	margin: 16px;
 	padding: 16px; 
 		display: flex;
 		justify-content: center; 
-		color: #98fb98;
+		color: #172727; 
 	border-radius: 6px;
 }
 	

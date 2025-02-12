@@ -15,7 +15,7 @@ function setup(){
   const canvas = createCanvas(500,500);
   canvas.parent("sketch");
   x= width / 2;
-  y= height;
+  y= height/ 2; 
   followerX1 = x;
   followerY1= y;
   followerX2= x;
@@ -25,21 +25,21 @@ function setup(){
 function draw() {
   background(0, 20);
 
-  fill("white");
+  fill("#ffffff");
   noStroke();
   circle (x,y,radius *2);
 
-  fill("red")
+  fill("#ff0000")
   circle(followerX1,followerY1, radius *2);
 
-  fill("blue");
+  fill("#1500ff");
   circle (followerX2, followerY2, radius * 2);
 
   x += xSpeed;
   y += ySpeed;
 
-  followerX1 += (x-followerX1) * .1;
-  followerY1 += (y-followerY1)* .1;
+  followerX1 += (x-followerX1) * 0.1;
+  followerY1 += (y-followerY1)* 0.1;
 
   followerX2 += (followerX1- followerX2)* 0.1;
   followerY2 += (followerY1- followerY2) *0.1;
@@ -48,7 +48,7 @@ function draw() {
     xSpeed *=-1;
 
   }
-  if(y > height || y< 0){
+  if(y >= height || y< 0){
     ySpeed *= -1; 
 
   }

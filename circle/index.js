@@ -1,9 +1,9 @@
 const radius = 25;
 let angle = 0;
 function setup() {
-  const canvas = createCanvas(500, 500);
+  const canvas = createCanvas(200, 200);
   canvas.parent('sketch');
-  background('black');
+  background('#ffffff');
   angleMode(DEGREES);
 }
 
@@ -15,7 +15,7 @@ function draw() {
   translate(width / 2, height / 2);
   rotate ( angle); 
   
-  fill(255,0,0,100);
+  fill(255,0,0,);
   noStroke ();
   ellipse(0,0,50% height,50% width); 
 
