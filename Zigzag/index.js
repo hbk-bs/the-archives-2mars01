@@ -6,7 +6,7 @@ let ySpeed= 1;
 
 
 function setup(){
-  const canvas= createCanvas(200,200);
+  const canvas= createCanvas(500,500);
   canvas.parent ("sketch");
  
   y=height/2;
@@ -28,4 +28,10 @@ if ( x>= width || x<0){
 if (y> height|| y<0){
   ySpeed *= -1;
 }
+}
+function keyPressed() {
+	if (key === "s") {
+		const name = prompt("Enter name", `out-${Date.now()}.png`);
+		save(name);
+	}
 }

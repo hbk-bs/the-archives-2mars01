@@ -25,8 +25,11 @@ picture,
 video,
 canvas,
 svg {
-	display: block;
+	display: block; 
 	max-width: 100%;
+	padding: 24px;
+	
+	
 }
 /*  damit verschiedene schriftarten keine automatischen schrifgrößen etc. haben */
 
@@ -88,10 +91,18 @@ figcaption{
 	border-bottom-left-radius:6px ;
 
 }
+.interaction{
+	background-color:#172727;
+	padding:16px;
+}
+.interaction:hover{
+	background-color: #2f4f4f;
+}
 .algorithm{
 	margin: 6px;
 
 }
+
 .goback{
 	position:fixed;
 	width:50px;

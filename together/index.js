@@ -53,3 +53,9 @@ function draw() {
 
   }
 }
+function keyPressed() {
+	if (key === "s") {
+		const name = prompt("Enter name", `out-${Date.now()}.png`);
+		save(name);
+	}
+}
