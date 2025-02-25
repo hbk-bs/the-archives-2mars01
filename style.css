@@ -142,7 +142,7 @@ border-radius: 50%;
 	text-decoration:none; 
 
 }
-.navbar ul {
+.nav ul {
 	list-style-type: none;
 	margin: 6px; 
 	padding: 6px;
@@ -151,14 +151,14 @@ border-radius: 50%;
 	border-radius: 10px;
   
 }
-.navbar a{
+.nav a{
 	color: #98fb98; 
 	text-decoration: none; 
 	padding: 15px; 
 	display: block; 
 	text-align: center; 
 }
-.navbar a:hover{
+.nav a:hover{
 	background-color:#3a4040 ;
 	border-radius: 10px;
 
