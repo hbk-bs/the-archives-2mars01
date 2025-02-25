@@ -25,9 +25,8 @@ picture,
 video,
 canvas,
 svg {
-	display: block; 
+	display: block;
 	max-width: 100%;
-	padding: 16px;
 	
 	
 }
@@ -56,7 +55,7 @@ body{
 	color: #3cb371; 
 	background-color: #98fb98;
   margin: 0 auto;
-	 
+	 padding: 24px;
 	line-break: normal;
 	font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 font-weight: normal; 
@@ -67,30 +66,28 @@ h1,h2,h3,h4,h5,h6{
 	text-align: center; 
 	color: #2f4f4f; 
 	padding-top: 16px;
-	
 	text-decoration: overline underline; 	 
 }
 p{
-	
+	display: flex;
+	justify-content: center; 
 	background-color:#172727;
 	color: #98fb98;
 	padding-bottom: 16px;
 	padding:16px;
-	margin: 16px;
 	text-align: center; 
 	font-weight: 500;
 	border-radius: 10px;
 	overflow: hidden
 }
 figcaption{
-	margin-bottom:6px; 
+	margin-bottom: 6px;
 	padding: 6px;
 	background-color: #172727;
-	color: #98fb98;
+	color:#98fb98;
 	text-align: center;
-	border-bottom-right-radius: 6px;
-	border-bottom-left-radius:6px ;
-
+	border-bottom-right-radius:6px;
+	border-bottom-left-radius: 6px;
 }
 .interaction{
 	background-color:#172727;
