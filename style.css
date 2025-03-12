@@ -27,7 +27,7 @@ canvas,
 svg {
 	display: block;
 	max-width: 100%;
-	padding: 16px;
+	padding-top: 16px;
 	
 	
 }
@@ -85,9 +85,12 @@ pre {color:#172727;
 	word-wrap: break-word;
 	white-space: pre-wrap;
 }
+figure{
+	
+}
 figcaption{
 	margin-bottom: 6px;
-	padding: 6px;
+	padding:6px;
 	background-color: #172727;
 	color:#98fb98;
 	text-align: center;
