@@ -57,19 +57,10 @@ h3 { font-size: 1.5rem; }
 
 p {
     margin-bottom: 1rem;
-    background-color: var(--card-background);
     color: var(--text-color);
-    padding: 16px;
     text-align: center;
     font-weight: 400;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-p:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 strong {
@@ -82,19 +73,6 @@ a {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 700;
-    margin: 16px;
-    padding: 12px 20px;
-    display: inline-block;
-    border-radius: 6px;
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-dark));
-    color: var(--card-background);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.3s ease;
-}
-
-a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: var(--primary-color-dark);
 }
 
 /* Header */
@@ -145,6 +123,16 @@ header p {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     margin-bottom: 2rem;
+}
+
+/* Text Container */
+.text-container {
+    background-color: var(--card-background); /* Background for the whole text */
+    padding: 2rem; /* Add padding around the text */
+    border-radius: var(--border-radius); /* Rounded corners */
+    box-shadow: var(--shadow); /* Subtle shadow for depth */
+    margin-bottom: 2rem; /* Add spacing below the container */
+    text-align: center; /* Center-align the text inside */
 }
 
 /* Images */
