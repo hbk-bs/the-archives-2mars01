@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Modern font */
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Neutral text color */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.intro-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.intro-card h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.intro-card p {
+    margin-bottom: 20px;
+}
+
+.intro-card strong {
+    color: #007BFF;
+}
+
+.code-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.code-link:hover {
+    background-color: #0056b3;
+}
+
+/* Media Grid */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.media-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.media-item video,
+.media-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .intro-card h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+		<title>the archive of maggie</title>
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+
+		<pre>#include <FastLED.h>#define LED_PIN 3
+			#define NUM_LEDS 30
+			#define BRIGHTNESS 255
+			#define LED_TYPE WS2811
+			#define COLOR_ORDER RGB
+			CRGB leds[NUM_LEDS];int pirPin = 2;int pirState = LOW;
+			int val = 0;
+			void setup() {  pinMode(pirPin, INPUT);  Serial.begin(9600);  FastLED.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, NUM_LEDS);
+			  FastLED.setBrightness(BRIGHTNESS);
+			}void loop() {
+			  val = digitalRead(pirPin);  if (val == HIGH) {
+				if (pirState == LOW) {
+				  Serial.println("Bewegung erkannt!");      for(int i = 0; i < NUM_LEDS; i++){
+				if(i % 3 == 2){
+				  leds[i] = CRGB(0,0,255);
+				}else{
+				  leds[i] = CRGB(255,0,0);
+				}
+				FastLED.show();
+				delay(700);
+			  }      pirState = HIGH;
+				}
+			  } else {
+			   if (pirState == HIGH) {
+				  Serial.println("Keine Bewegung.");      delay(2500);
+				  fill_solid(leds, NUM_LEDS, CRGB::Black);
+				  FastLED.show();      pirState = LOW;
+				}
+			  }
+			}</pre>
+	
+
+		<script src="index.js"></script>
+	</body>
+</html>
